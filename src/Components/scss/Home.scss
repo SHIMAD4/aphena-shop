@@ -16,7 +16,7 @@
     border-radius: 1.2rem;
     color: variables.$accent_clr;
     .category__block {
-        @include mixins.flex-sp-btw(column, none);
+        @include mixins.flex(column, none, none);
         margin-left: 60px;
         margin-bottom: 30px;
         .category__title {
@@ -177,3 +177,35 @@
     }
 }
 
+.slider {
+    @include mixins.flex(row, space-between, center);
+    margin-top: 100px;
+    margin-left: 100px;
+    .slider__btn--next {
+        img {
+            transform: rotateZ(180deg);
+        }
+    }
+    .slider__block {
+        width: 200px;
+        height: 200px;
+        border-radius: 2rem;
+        background-color: variables.$second-bg_clr;
+        transition: variables.$transition;
+        text-align: center;
+        &:hover {
+            background-color: variables.$accent_clr;
+            transition: variables.$transition;
+        }
+        .block__text {
+            transform: rotateZ(-45deg) translateX(-60px) translateY(60px);
+            font-size: 20px;
+            color: variables.$accent_clr;
+            transition: variables.$transition;
+        }
+        &:hover .block__text {
+            transition: variables.$transition;
+            color: variables.$main-bg_clr;
+        }
+    }
+}

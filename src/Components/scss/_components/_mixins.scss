@@ -1,13 +1,6 @@
-@mixin flex-sp-btw($flex-direction: row, $align-items:center) {
+@mixin flex($fd:row, $jc:space-between, $ai:center) {
     display: flex;
-    justify-content: space-between;
-    align-items: $align-items;
-    flex-direction: $flex-direction;
-}
-
-@mixin flex-center($direction: row) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
 }

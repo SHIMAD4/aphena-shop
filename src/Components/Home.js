@@ -1,4 +1,5 @@
 import './css/Home.css';
+import slider_btn from '../img/slider-btn.svg';
 
 function Home() {
   return (
@@ -81,6 +82,45 @@ function Home() {
             <a href="./" className='category__subtitle'>Струны</a>
             <a href="./" className='category__subtitle'>Каподастры</a>
           </div>
+        </div>
+        <div className='slider'>
+          <button className='slider__btn slider__btn--prev btn'><img src={slider_btn} alt="button" /></button>
+          <div className='slider__block block'>
+            <p className='block__text'>Grand Auditorium</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>Dreadnought</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>Parlor</p>
+          </div>
+          <button className='slider__btn slider__btn--next btn'><img src={slider_btn} alt="button" /></button>
+        </div>
+        <div className='slider'>
+          <button className='slider__btn slider__btn--prev btn'><img src={slider_btn} alt="button" /></button>
+          <div className='slider__block block'>
+            <p className='block__text'>Travel</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>Двенадцатиструнная</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>3/4</p>
+          </div>
+          <button className='slider__btn slider__btn--next btn'><img src={slider_btn} alt="button" /></button>
+        </div>
+        <div className='slider'>
+          <button className='slider__btn slider__btn--prev btn'><img src={slider_btn} alt="button" /></button>
+          <div className='slider__block block'>
+            <p className='block__text'>Stratocaster</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>Superstrat</p>
+          </div>
+          <div className='slider__block block'>
+            <p className='block__text'>Flying V</p>
+          </div>
+          <button className='slider__btn slider__btn--next btn'><img src={slider_btn} alt="button" /></button>
         </div>
       </section>
     </div>

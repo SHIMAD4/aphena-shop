@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .advertisement {
-  @include mixins.flex-center;
+  @include mixins.flex(column, center, center);
   width: 900px;
   height: 150px;
   background-color: variables.$second-bg_clr;
