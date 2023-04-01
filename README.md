@@ -1,1 +1,1 @@
-# aphena-shop
+# Aphena guitar shop
