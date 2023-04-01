@@ -2,7 +2,7 @@
 @use './_components/mixins';
 
 .banner {
-    @include mixins.flex-center(column);
+    @include mixins.flex(column, center, center);
     height: 85vh;
     .banner__bg {
         position: absolute;
