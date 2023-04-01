@@ -181,10 +181,16 @@
     @include mixins.flex(row, space-between, center);
     margin-top: 100px;
     margin-left: 100px;
+    .slider__view-box {
+        width: 800px;
+        overflow: hidden;
+    }
+    .slider__box {
+        transition: variables.$transition;
+        @include mixins.flex(row, space-between, center);
+    }
     .slider__btn--next {
-        img {
-            transform: rotateZ(180deg);
-        }
+        transform: rotateZ(180deg);
     }
     .slider__block {
         width: 200px;

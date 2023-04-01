@@ -177,7 +177,18 @@
   margin-top: 100px;
   margin-left: 100px;
 }
-.slider .slider__btn--next img {
+.slider .slider__view-box {
+  width: 800px;
+  overflow: hidden;
+}
+.slider .slider__box {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.slider .slider__btn--next {
   transform: rotateZ(180deg);
 }
 .slider .slider__block {
