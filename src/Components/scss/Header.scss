@@ -1,0 +1,51 @@
+@use './_components/mixins';
+@use './_components/variables';
+
+.header {
+    @include mixins.flex-sp-btw;
+    margin-top: 20px;
+    .logo {
+        width: 200px;
+    }
+    .header__nav {
+        width: 100%;
+        max-width: 850px;
+        li:nth-child(6) {
+            margin-right: 50px;
+        }
+    }
+}
+
+.list {
+    list-style-type: none;
+    @include mixins.flex-sp-btw;
+    font-size: 18px;
+    .list__btn {
+        @include mixins.flex-center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: variables.$accent_clr;
+        position: relative;
+        .basket--icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-55%, -50%);
+        }
+        img {
+            width: 30px;
+        }
+    }
+}
+
+.list__link {
+    transition: variables.$transition;
+    &:hover {
+        transition: variables.$transition;
+        color: variables.$accent_clr;
+    }
+    &:active {
+        transition: none;
+    }
+}
