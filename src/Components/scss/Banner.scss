@@ -1,3 +1,27 @@
+@use './_components/variables';
+@use './_components/mixins';
+
 .banner {
-    
+    @include mixins.flex-center(column);
+    height: 85vh;
+    .banner__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .banner__title {
+        display: block;
+        width: 465px;
+        font-size: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        span {
+            color: variables.$accent_clr;
+        }
+    }
+    .banner__subtitle {
+        color: variables.$grey_clr;
+    }
 }

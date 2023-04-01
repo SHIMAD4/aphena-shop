@@ -1,0 +1,27 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.banner .banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.banner .banner__title {
+  display: block;
+  width: 465px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.banner .banner__title span {
+  color: #FFBE17;
+}
+.banner .banner__subtitle {
+  color: #D1D1D1;
+}
