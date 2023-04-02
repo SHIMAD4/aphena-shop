@@ -4,9 +4,6 @@
 .header {
     @include mixins.flex(row, space-between, center);
     margin-top: 20px;
-    .logo {
-        width: 200px;
-    }
     .header__nav {
         width: 100%;
         max-width: 850px;

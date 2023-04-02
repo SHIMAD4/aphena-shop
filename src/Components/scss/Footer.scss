@@ -1,0 +1,55 @@
+@use './_components/mixins';
+@use './_components/variables';
+
+.footer {
+    background-color: variables.$second-bg_clr;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer > .wrapper {
+    @include mixins.flex(row, space-between, center);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer__list {
+    @include mixins.flex(column, flex-start, normal);
+    width: 18%;
+    height: 110px;
+    flex-wrap: wrap;
+    gap: 20px;
+    .list__item {
+        width: fit-content;
+    }
+}
+
+.footer__callback {
+    @include mixins.flex(column);
+    .callback__tel,
+    .callback__mail {
+        background-color: variables.$accent_clr;
+        border-radius: 25px;
+        padding: 14px;
+        color: black;
+        &:hover {
+            opacity: .7;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+    .callback__mail {
+        margin-top: 14px
+    }
+}
+
+.footer__icons {
+    @include mixins.flex();
+    .icons__item {
+        margin-left: 14px;
+    }
+    .icons__item:first-child {
+        margin-left: 0px;
+    }
+}

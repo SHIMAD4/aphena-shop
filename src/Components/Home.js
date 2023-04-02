@@ -1,22 +1,22 @@
 import './css/Home.css';
-import Slider from './slider';
+import Slider from './Slider';
 
 function Home() {
   const types = [
     {
-      acousticOne: 'Grand Auditorium',
-      acousticTwo: 'Dreadnought',
-      acousticThree: 'Parlor',
+      One: 'Grand Auditorium',
+      Two: 'Dreadnought',
+      Three: 'Parlor',
     },
     {
-      acousticOne: 'Travel',
-      acousticTwo: 'Двенадцатиструнная',
-      acousticThree: '3/4',
+      One: 'Travel',
+      Two: 'Двенадцатиструнная',
+      Three: '3/4',
     },
     {
-      acousticOne: 'Stratocaster',
-      acousticTwo: 'Superstrat',
-      acousticThree: 'Flying V'
+      One: 'Stratocaster',
+      Two: 'Superstrat',
+      Three: 'Flying V'
     }
   ]
   return (
@@ -100,7 +100,7 @@ function Home() {
             <a href="./" className='category__subtitle'>Каподастры</a>
           </div>
         </div>
-        <Slider forms={types[0]}/>
+        <Slider forms={types[0]} />
         <Slider forms={types[1]} />
         <Slider forms={types[2]} />
       </section>

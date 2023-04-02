@@ -18,13 +18,13 @@ function Slider(props) {
             <div className='slider__view-box'>
                 <div className='slider__box' ref={blocksRef}>
                     <div className='slider__block block'>
-                        <p className='block__text'>{props.forms.acousticOne}</p>
+                        <p className='block__text'>{props.forms.One}</p>
                     </div>
                     <div className='slider__block block'>
-                        <p className='block__text'>{props.forms.acousticTwo}</p>
+                        <p className='block__text'>{props.forms.Two}</p>
                     </div>
                     <div className='slider__block block'>
-                        <p className='block__text'>{props.forms.acousticThree}</p>
+                        <p className='block__text'>{props.forms.Three}</p>
                     </div>
                 </div>
             </div>
