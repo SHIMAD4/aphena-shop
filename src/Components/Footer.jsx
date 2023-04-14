@@ -1,7 +1,16 @@
-import './css/Footer.css';
-import logo from '../img/Logo.svg';
-import basket from '../img/basket.svg';
-import profile from '../img/profile.svg';
+import './scss/Footer.scss';
+import logo from '../assets/Logo.svg';
+import basket from '../assets/basket.svg';
+import profile from '../assets/profile.svg';
+
+const links = [
+  'Главная',
+  'Магазин',
+  'Фотоальбом',
+  'Новости',
+  'Контакты',
+  'Отзывы',
+]
 
 function Home() {
   return (
@@ -9,12 +18,7 @@ function Home() {
         <div className='wrapper'>
                 <a href="./"><img src={logo} alt="logo" className='footer__logo logo'/></a>
                 <ul className='footer__list list'>
-                    <li className='list__item'><a href="./" className='list__link'>Главная</a></li>
-                    <li className='list__item'><a href="./" className='list__link'>Магазин</a></li>
-                    <li className='list__item'><a href="./" className='list__link'>Новости</a></li>
-                    <li className='list__item'><a href="./" className='list__link'>Контакты</a></li>
-                    <li className='list__item'><a href="./" className='list__link'>Отзывы</a></li>
-                    <li className='list__item'><a href="./" className='list__link'>Фотоальбом</a></li>
+                {links.map((link) => <li className='list__item'><a href="./" className='list__link'>{link}</a></li>)}
                 </ul>
                 <div className='footer__callback callback'>
                     <a href="tel:+7 999 999 99 99" className='callback__tel'>+7 999 999 99 99</a>

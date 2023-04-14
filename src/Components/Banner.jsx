@@ -1,7 +1,7 @@
-import './css/Banner.css';
-import bg from '../img/bg.png';
+import './scss/Banner.scss';
+import bg from '../assets/bg.png';
 
-function Banner() {
+export default function Banner() {
   return (
     <div className='wrapper'>
       <section className="banner">
@@ -12,5 +12,3 @@ function Banner() {
     </div>
   );
 }
-
-export default Banner;

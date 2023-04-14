@@ -1,5 +1,5 @@
-import './css/Home.css';
-import slider_btn from '../img/slider-btn.svg';
+import './scss/Home.scss';
+import slider_btn from '../assets/slider-btn.svg';
 import { useEffect, useState, useRef } from 'react';
 
 function Slider(props) {
